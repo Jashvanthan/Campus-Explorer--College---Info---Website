@@ -1,0 +1,250 @@
+body{
+    margin:5px 1px;
+    padding:0px;
+}
+nav{
+    display:flex;
+    flex-flow:row nowrap;
+    background-color: black;
+    width:97%;
+    height:40px;
+    border:0px solid antiquewhite;
+    border-radius:3px;
+    margin:0px;
+    padding:20px;
+    justify-content:space-around;
+    box-shadow:1px 2px 4px black;
+}
+nav:hover{
+    transform: translateY(4px);
+    transition:0.5s;
+    box-shadow:1px 1px 4px black;
+}
+nav button{
+    background-color:black;
+    width:90px;
+    height:40px;
+    border:0px solid black;
+    transition:0.5s;
+}
+a{
+    text-decoration:none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    color:white;
+}
+a:hover{
+    font-size:15px;
+    text-decoration:underline;
+    text-shadow:1px 2px 5px white;
+}
+nav button:hover{
+    transform:translateY(4px);
+    transition:0.6s;
+}
+nav button:active{
+    animation:btu;
+    animation-duration:1s;
+}
+@keyframes btu{
+    0%{
+        width:0px;
+        height:40px;
+    }
+   100%{
+    background-color:red;
+    height:40px;
+    width:90px;
+    border-radius:3px;
+    }
+}
+header .li{
+    list-style:none;
+    display: flex;
+    flex-flow:row nowrap;
+    font-size: 18px;
+    font-family:monospace;
+    letter-spacing:1px;
+    text-transform:capitalize;
+    margin:0px 10px 16px 13px;
+    background-color:lightseagreen;
+    box-shadow:1px 1px 4px lightseagreen;
+    height:85px;
+    width:96%;
+    align-items:center;
+    padding:0px 10px;
+    justify-content: space-between;
+    animation:liop 1s;
+}
+@keyframes liop{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        opacity:0.9;
+    }
+}
+header .li:hover{
+   transform:translateY(9px);
+   width:97%;
+   background-color:lightcoral; 
+   box-shadow:1px 2px 4px lightcoral;
+   
+}
+
+header button{
+    height:45px;
+    width:130px;
+    color:white;
+    background-color: black;
+    border:1px solid black;
+    text-align:center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    box-shadow:1px 1px 4px black;
+    margin-left:44%;
+}
+
+header button:hover{
+    transform:translateY(4px) translateX(-4px);
+    transition:0.3s;
+    background-color:lightcoral;
+    text-shadow:1px 1px 3px white;
+    box-shadow:1px 2px 4px black;
+}
+header button:active{
+    background-color:rgb(244, 156, 124);
+    border-radius:0px;
+}
+header .header1{
+    text-align:center;
+}
+header .header1 h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 28px;
+    text-transform:capitalize;
+    color:white;
+}
+span{
+    animation:spaner 2s infinite;
+}
+span:nth-child(2){
+    animation-delay:0.3s;
+}
+span:nth-child(3){
+    animation-delay:0.5s;
+}
+span:nth-child(4){
+    animation-delay:0.9s;
+}
+span:nth-child(5)
+{
+    animation-delay:1.2s;
+}
+span:nth-child(6)
+{
+    animation-delay:1.5s;
+}
+span:nth-child(7)
+{
+    animation-delay:1.7s;
+}
+@keyframes spaner{
+    50%{
+       color:lightcoral;
+       text-shadow:1px 2px 4px lightcoral;
+    }
+}
+
+/*
+.s1:hover{
+    color: lightsalmon;
+    text-shadow:1px 2px 4px lightcoral;
+}
+.s2:hover{
+    color: lightseagreen;
+    text-shadow:1px 2px 4px lightseagreen;
+}
+.s3:hover{
+    color:coral;
+    text-shadow:1px 2px 4px coral;
+}
+.s4:hover{
+    color:lightskyblue;
+    text-shadow:1px 2px 4px lightskyblue;
+}
+.s5:hover{
+    color:lightpink;
+    text-shadow: 1px 2px 5px lightpink;
+}*/
+section{
+    display:flex;
+    flex-flow:column nowrap;
+}
+section .section1{
+    color:black;
+   border-radius:3px;
+  /* padding-left:10px;*/
+}
+section .section1 .subbuilder1{
+    background-color:lightpink;
+    padding:10px;
+    margin: 14px;
+    color:rgb(18, 17, 17);
+    border-radius:3px;
+    box-shadow:1px 1px 4px lightpink;
+   text-transform: capitalize;
+}
+section .section1 .subbuilder1 h1{
+     text-transform: capitalize;
+    font-family:fantasy;
+    letter-spacing:1.5px;
+    font-size:24px;
+    font-weight: 400;
+}
+.section2{
+    color:black;
+    display:flex;
+    flex-flow:column nowrap;
+    padding:10px;
+}
+.subsection2{
+    background-color:lightcoral;
+    margin:15px;
+    padding:10px;
+    width:96%;
+    border-radius:3px;
+    box-shadow:1px 2px 4px lightcoral;
+    text-transform: capitalize;
+}
+.subbuilder1:hover,.subsection2:hover{
+    transform:translateY(10px);
+    transition:0.5s;
+}
+section h1{
+    text-transform: capitalize;
+    font-family:fantasy;
+    letter-spacing:1.5px;
+    font-weight: 600;
+}
+section div{
+    text-align: center;
+}
+section ul li{
+     font-family: serif;
+     margin-bottom:4px;
+}
+section .section2 h3{
+    padding:6px;
+    font-size:20px;
+    letter-spacing:1.2px;
+
+}
+section .section1 p,section .section2 p{
+    font-size:20px;
+    letter-spacing:1.2px;
+    padding:6px;
+}

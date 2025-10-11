@@ -1,0 +1,78 @@
+h1,.h{
+    font-family: fantasy;
+    font-weight:400;
+    font-size:26px;
+    color:black;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.h{
+    text-align: center;
+}
+
+p{
+    justify-content:space-around;
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    letter-spacing:0.6px;
+    text-transform: capitalize;
+}
+img{
+    width:90%;
+    height:500px;
+    margin:20px 10px 10px 70px;
+}
+table,th,td{
+    border:1px solid black;
+    border-collapse:collapse;
+    padding:10px;
+    text-align:center;
+    margin:20px 10px 10px 70px;
+}
+th{
+    background-color:lightgrey;
+}
+table{
+    width:90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    letter-spacing:0.6px;
+    line-height:1.6;
+    text-transform: capitalize;
+    margin-bottom:20px;
+}
+.pre{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    letter-spacing:0.6px;
+    line-height:1.6;
+    text-transform: capitalize;
+}
+.btn{
+    background-color:palevioletred;
+    width:90px;
+    height:40px;    
+    box-shadow:1px 2px 4px palevioletred;
+    border-radius:3px;
+    margin-left:46%;
+    border:0px solid palevioletred;
+}
+.btn:active{
+   background-color:mediumseagreen
+}
+a{
+    color: black;
+    text-decoration:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+}
+a:hover{
+    text-decoration:underline;
+    color: white;
+    text-shadow:1px 1px 3px white;
+}
+.btn:hover{
+    transform:translateY(4px);
+    transition:0.6s;
+}

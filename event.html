@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SJCE Events</title>
+  <link rel="icon" href="StJOSEPHS_logo1.png">
+  <link rel="stylesheet" href="Event.css">
+</head>
+<body>
+  <nav>
+    <button><a href="home.html">Home</a></button>
+    <button><a href="Department.html">Department</a></button>
+    <button><a href="placement.html">Placement</a></button>
+    <button><a href="event.html">Events</a></button>
+    <button><a href="contact.html">Contact Us</a></button>
+  </nav>
+
+  <header>
+    <h2>College Events</h2>
+    <button id="addEventBtn">+ Add Event</button>
+  </header>
+
+  <div class="filter">
+    <label>Filter by Type:</label>
+    <select id="filterSelect">
+      <option value="All">All</option>
+      <option value="College Event">College Event</option>
+      <option value="Hackathon">Hackathon</option>
+      <option value="Workshop">Workshop</option>
+      <option value="Upcoming">Upcoming</option>
+    </select>
+  </div>
+
+  <section id="eventContainer"></section>
+
+
+  <div id="eventForm">
+    <h3 id="formTitle">Add New Event (Admin)</h3>
+    <input type="password" id="adminPassword" placeholder="Enter Admin Password"><br>
+    <input type="text" id="eventName" placeholder="Event Name" pattern="[A-Za-z]+" title="Enter the letter"><br>
+    <input type="text" id="orgName" placeholder="Organization Name"><br>
+    <input type="text" id="venue" placeholder="Venue"><br>
+    <input type="date" id="date"><br>
+    <input type="time" id="time"><br>
+    <input type="text" id="duration" placeholder="Duration"><br>
+    <select id="eventType">
+      <option value="College Event">College Event</option>
+      <option value="Hackathon">Hackathon</option>
+      <option value="Workshop">Workshop</option>
+      <option value="Upcoming">Upcoming</option>
+    </select><br>
+    <section class="btu">
+    <input type="file" id="eventImage" accept="image/*"><br>
+    <button id="submitEvent">Submit Event</button>
+    <button id="closeForm">Close</button>
+    <p id="loginMsg" style="color:black;font-family: 'Times New Roman', Times, serif;"></p>
+    </section>
+  </div>
+  <script src="event.js"></script>
+</body>
+</html>
