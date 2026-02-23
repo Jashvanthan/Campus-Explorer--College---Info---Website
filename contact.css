@@ -54,10 +54,36 @@ nav button:active{
     border-radius:3px;
     }
 }
-.address{
+.address,.add{
     background-color:lightcoral;
 }
-address,p{
+.add{
+   padding: 20px;
+    border-radius:3px;
+    height:auto;
+    box-shadow:1px 2px 4px lightcoral;
+}
+
+.add p{
+    font-size:14px;
+font-family:monospace;
+    line-height:1.6;
+    letter-spacing:0.6px;
+    text-transform: capitalize;
+}
+@media (max-width: 600px) {
+    .add p {
+        font-size: 12px;
+    }
+}
+.add pre{
+    font-size:15px;
+    line-height:1.6;
+     font-family:monospace;
+     letter-spacing:0.6px;
+     text-transform: capitalize;
+}
+address{
     margin-left:30px;
 }
 svg{
@@ -92,6 +118,7 @@ header h1{
     overflow:hidden;
     animation:head 3s infinite;
 }
+
 @keyframes head{
     0%,100%{
         width:0px;
@@ -104,6 +131,6 @@ header h1{
         width:275px;
     }
     50%{
-        width:490px;
+        width:550px;
     }
 }
