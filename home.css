@@ -83,7 +83,7 @@ header h1{
     display:flex;
     height:30px;
     padding:5px;
-    width:490px;
+    width:497px;
     border-right: 3px solid red;
     overflow:hidden;
     animation:head 3s infinite;
@@ -142,7 +142,7 @@ header img{
     margin:13px 1px;
     padding:10px;
 }
-.subbuilder1{
+.subbuilder1,.subbuilder12{
     display:flex;
     flex-flow:column nowrap;
     height:600px;
@@ -151,7 +151,7 @@ header img{
     box-shadow: 1px 1px 4px blanchedalmond;
     overflow: hidden;
 }
-.subbuilder1:hover{
+.subbuilder1:hover,.subbuilder12:hover{
     transform: translateY(15px);
     transition:0.5s;
     box-shadow: 1px 3px 8px blanchedalmond;
@@ -249,7 +249,7 @@ header img{
     flex-flow:row nowrap;
     justify-content:space-around;
     align-items:center;
-    height:120px;
+    height:170px;
     width:94%;
     padding:6px;
     margin:20px 0px 10px 0px;
@@ -420,7 +420,7 @@ header img{
         transform:translateX(0px);
     }
 }
-.builder{
+.builder,.builders1{
     display: flex;
     flex-direction:column;
     height:1200px;
@@ -429,15 +429,20 @@ header img{
     margin:13px 1px;
     padding:10px;
 }
-.subbuilder1{
+.subbuilder1,.subbuilder12{
     display:flex;
     flex-flow:row nowrap;
-    height:260px;
     background-color: blanchedalmond;
     border-radius:5px;
     box-shadow: 1px 1px 4px blanchedalmond;
 }
-.subbuilder1:hover{
+.subbuilder1{
+    height:250px;
+}
+.subbuilder12{
+    height: 285px;
+}
+.subbuilder1:hover,.subbuilder12:hover{
     transform: translateY(15px);
     background-color: lightseagreen;
     transition:0.5s;
@@ -465,26 +470,11 @@ header img{
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      text-transform:capitalize;
 }
+.bp:hover{
+    color: white;
+   
+}
 
-.builder .bp:active{
-   animation:btu1;
-    animation-duration:1s;
-}
-@keyframes btu1{
-    0%{
-        width:0px;
-        height:30px;
-        overflow:hidden;
-        padding:3px;
-    }
-   100%{
-    background-color:lightcoral;
-    height:40px;
-    width:400px;
-    border-radius:3px;
-    padding:3px;
-    }
-}
 .builder p{
     text-transform: capitalize;
     font-family:Arial, Helvetica, sans-serif;
@@ -501,9 +491,10 @@ header img{
 }
 .footer{
     display:flex;
-    flex-flow:row nowrap;
+    flex-flow:row wrap;
    justify-content:center;
    align-items:center;
+   column-gap:10px;
     height:90px;
     width:100%;
     background-color:cadetblue;
@@ -521,7 +512,7 @@ header img{
     flex-flow:row nowrap;
     justify-content:space-around;
     align-items:center;
-    height:120px;
+    height:140px;
     width:94%;
     padding:6px;
     margin:20px 0px 10px 30px;
